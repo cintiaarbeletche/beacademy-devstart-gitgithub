@@ -1,0 +1,260 @@
+<!-- Criação de informações - elementos de entrada de dados, como caixas de textos, upload de arquivos, botões, check-box, seletores. Depois, esses dados podem ser manipulados com php, java -back-end. -->
+<!--Block content tb = mesma ideia da div
+    * action: o que acontece quando alguém clicar no "enviar"
+    * method: get (é o padrão. Usado quando se quer buscar algo) ou post (receber dados que devem ser armazenados). 
+-->
+<!--https://mwusite.com.br/?nome=luanmonteiro&idade=20-->
+
+<!--
+    <form action="" method="post">
+        <fieldset name="contato" form="form-teste">
+        <legend>Preencha o formulário de contato</legend>
+        </fieldset>
+        <br>
+    
+        <!- Button 
+            Type:
+            * Submit - pega conteúdo preenchido e dispara conforme configurado no back 
+            * Reset - limpa todos os campos preenchidos dentro do formulário
+            * Button - Pode associar com name, class, id... para regras de negócios do banco de dados. Vai pro back
+    <button type="button" name="" class="" id="">Enviar</button>
+    </form>    
+-->
+
+<!--Label - serve para associar e identificar um ou mais tags de entrada de dados
+        * Ajuda na acessibilidade - muito importante para SEO
+        * Atributos: 
+            - for: usado para fazer a conexão com outros tipos de elementos de formulário         
+-->
+
+<!--
+    <form>
+        <fieldset>
+            <legend>Preencha o formulário de contato</legend>
+        </fieldset>
+        <br>
+        <label>
+            Nome:
+            <input type="text" id="nome">
+        </label>
+      
+        <label for="age">Idade:</label>
+        <input type="number" id="age"> 
+    </form>
+-->
+
+<!--
+    <datalist>
+    * Lista de valores com sugestões para algum elemento input
+    * Usuário poderá selecionar um dos valores ou colocar novos valores
+-->
+
+<!--
+    <form action="" method="post">
+        <fieldset name="contato">
+            <legend>Preencha o formulário de contato</legend>
+        </fieldset>
+-->    
+    
+<!--Lista de Professores
+    <datalist id="prof-list">
+        <option>Luan</option>
+        <option>Jenifer</option>
+        <option>Regis</option>
+    </datalist>
+    <input type="text" list="prof-list" placeholder="Escolha seu professor">
+    
+</form>
+-->
+
+<form
+action=""
+method="post"
+enctype="multipart/form-data"
+>
+    <fieldset>
+        <legend>Trabalhando com Inputs</legend>
+    
+<!--Input text
+    <input 
+    type="text"
+    placeholder="Preencha o seu nome"
+    size="60"
+    minlength="8"
+    maxlength="20"
+    title="Você precisa colocar mais que 8 caracteres e menos do que 20"
+    >
+-->
+    
+<!--required
+disabled
+readonly
+required - preenchimento obrigatório
+disabled - desabilitado
+readonly - somente leitura
+
+<input 
+type="number"
+size="50"
+minlength="6"
+maxlength="12"
+title="Preencha o dado"
+>
+<br>
+
+<input 
+type="email"
+size="24"
+title="Preencha o dado"
+>
+-->
+
+<!--Input Number-->
+<!--Input Email-->
+
+<!--required-->
+
+<br>
+<!--Password
+
+    <input 
+    type="password"
+    size="24"
+    minlength="8"
+    maxlength="16"
+    title="Preencha o dado"
+    required
+    >
+        <br>
+    <button type="submit">Enviar</button>
+    -->
+
+<!--Pattern
+    <input 
+    type="password"
+    size="24"
+    title="Sua senha precisa ser em Hexadecimal"
+    pattern="[0-9a-fA-F]{4,8}"
+    required
+    inputmode="numeric"
+    >
+-->
+
+<!--Input hidden
+    <input type="hidden" value="Eu estou escondido =)"> -->
+   
+<!--Input color
+    <input type="color" value="Eu estou escondido =)">
+    <br><br>
+-->
+<!--Input date
+    <input type="week">
+    
+    <br><br>
+-->
+
+<!--Input Type - Check (Checkbox)
+
+    <label for="area">Seu interesse maior é por qual área?
+    </label>
+    
+    <div>
+        <input 
+        type="checkbox"
+        name="interesse" 
+        id="frontend"
+        value="Front-End Luan Monteiro">
+        <label for="frontend">Front-End Luan Monteiro</label>
+       
+        <input
+        type="checkbox"
+        name="interesse" 
+        id="backend"
+        value="Back-End Regis Santos">
+        <label for="backend">Back-End Regis Santos</label>
+    
+        <input
+        type="checkbox"
+        name="interesse" 
+        id="designuiux"
+        value="Design UI/UX Jenifer Vieira"
+        checked>
+        <label for="designuiux">Design UI/UX Jenifer Vieira></label>
+    
+    </div>
+    
+    <br><br>
+-->
+
+<!-- interesse = front-end Luan Monteiro, Back-end Regis Santos, Design UX/UI Jenifer Vieira-->
+
+<!--Radio Button
+    <h3>Deseja receber notificação da be.academy?</h3>
+    <label for="Yes">Sim</label>
+    <input type="radio" id="yes" checked name="notification" value="yes">
+    
+    <label for="No">Não</label>
+    <input type="radio" id="no" name="notification" value="no">
+    <br><br>
+    <button type="submit">Enviar</button>
+-->
+
+<!--SELECT
+
+Elemento de formulário capaz de criar uma lista de opções a serem selecionadas (DropDown)-->
+
+<label for="teacher">Professores</label>
+<select name="select-teacher" id="teacher" multiple size="4">
+    <option value="">Selecione um professor</option>
+    <option value="Luan Santos">Luan Santos</option>
+    <option value="Moacir Garcia">Moacir Garcia</option>
+    <option value="Jenifer Vieira">Jenifer Vieira</option>
+    <option value="Regis Eduardo">Regis Eduardo</option>
+</select>
+
+<!--Para armazenar no banco de dados, pode salvar assim:
+select-teacher = ['Luan Santos', 'Moacir Garcia', 'Jenifer Vieira', 'Regis Eduardo'] 
+-->
+<br>
+<button type="submit">Enviar</button>
+<br><br>
+
+<!--Input Search
+* Elemento usado para pesquisar conteúdo
+* Parecido com o campo "text" e pode receber atributos e comportamentos
+-->
+
+<input
+type="search"
+name="" 
+title=""  
+placeholder="Busque o usuário pelo id" 
+size="24"
+pattern="[0-9]{0,3}"
+title="Busque pelo id de até 3 dígitos"
+required
+>
+
+<br><br>
+
+<!--
+    Manipulando arquivos com o file
+    * O usuário poderá fazsr um upload de 1 ou mais arquivos, de acordo com a extensão  
+-->
+<input 
+type="file"
+value=""
+accept=".doc, .pdf, audio/*, .image/*, .xlsx"
+multiple
+name=""
+id=""
+>
+
+
+
+
+
+
+</fieldset>
+  
+</form>
