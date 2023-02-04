@@ -1,0 +1,25 @@
+*Site dos comandos*
+
+https://www.w3schools.com/tags/att_input_pattern.asp 
+
+*Site das compatibilidades*
+
+https://caniuse.com/?search=color
+
+*WebDesign*
+https://webdesigner.withgoogle.com/
+
+*Portugol*
+https://dgadelha.github.io/Portugol-Webstudio/
+
+*id para java*
+https://www.jetbrains.com/pt-br/idea/
+
+*Many Pixels*
+https://www.manypixels.co/gallery
+
+*svg*
+https://storyset.com/
+
+*ícones*
+https://icomoon.io/
