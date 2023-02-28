@@ -1,0 +1,25 @@
+1. Semântica - https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065#exemplo-pratico
+<header>
+<section>
+<article>
+<nav>
+<aside>
+<main>
+<figure>
+<footer>
+<a>
+<em>
+<strong>
+<cite>
+<q>
+<time>
+
+2. Title - h1,h2 - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/title
+
+3. Parágrafo {p} - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p
+
+4. Listas - lu, li - https://www.devmedia.com.br/listas-em-html/23853
+
+5. Navegação - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/nav
+
+6. 
